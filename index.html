@@ -8,14 +8,11 @@
     <!-- 
     - primary meta tags
   -->
-    <title>日本の列車ブログ - 歴史、種類、そして日本人の想い</title>
-    <meta
-      name="title"
-      content="日本の列車ブログ - 歴史、種類、そして日本人の想い"
-    />
+    <title>日本列車の食事 - 新鮮で高品質な食事をお届け</title>
+    <meta name="title" content="日本列車の食事 - 新鮮で高品質な食事をお届け" />
     <meta
       name="description"
-      content="日本の列車についてのブログ。歴史、種類、そして日本人の列車への想いをご紹介。"
+      content="日本の列車で提供される高品質な食事についてご紹介します。新鮮な料理をお手頃価格でお楽しみください。"
     />
 
     <!-- 
@@ -38,27 +35,31 @@
       rel="stylesheet"
     />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16681400454">
-    </script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16681400454"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'AW-16681400454');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "AW-16681400454");
     </script>
     <style>
       /* Modal styling */
       .modal {
-        position: fixed; 
-        z-index: 1000; 
+        position: fixed;
+        z-index: 1000;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
       }
-      
+
       .modal-content {
         background-color: white;
         margin: 8% auto; /* 15% from the top and centered */
@@ -68,14 +69,14 @@
         max-width: 500px;
         text-align: center;
       }
-      
+
       .close {
         color: #aaa;
         float: right;
         font-size: 28px;
         font-weight: bold;
       }
-      
+
       .close:hover,
       .close:focus {
         color: black;
@@ -87,9 +88,9 @@
 
   <body>
     <div id="shinkansen-modal" class="modal">
-    <div class="modal-content">
+      <div class="modal-content">
         <span class="close">&times;</span>
-        <img src="./assets/images/modal_img.jpg" width="100%" />
+        <img src="./assets/images/train6.webp" width="100%" />
       </div>
     </div>
     <!-- 
@@ -99,12 +100,7 @@
     <header class="header section" data-header>
       <div class="container">
         <a href="#" class="logo">
-          <img
-            src="./assets/images/logo.svg"
-            width="129"
-            height="40"
-            alt="日本の列車ブログ ロゴ"
-          />
+          <h3>Shinkansen Food</h3>
         </a>
 
         <nav class="navbar" data-navbar>
@@ -117,13 +113,19 @@
 
             <li class="navbar-item">
               <a href="#" class="navbar-link hover:underline" data-nav-link
-                >最新の投稿</a
+                >メニュー</a
               >
             </li>
 
             <li class="navbar-item">
               <a href="#" class="navbar-link hover:underline" data-nav-link
-                >メンバーシップ</a
+                >私たちについて</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link hover:underline" data-nav-link
+                >お問い合わせ</a
               >
             </li>
           </ul>
@@ -146,7 +148,7 @@
             <span class="span three"></span>
           </button>
 
-          <a href="#" class="btn">参加する</a>
+          <a href="#" class="btn">メニューを見る</a>
         </div>
       </div>
     </header>
@@ -187,8 +189,8 @@
         <section class="section hero" aria-label="home">
           <div class="container">
             <h1 class="h1 hero-title">
-              <strong class="strong">ようこそ、日本の列車ブログへ。</strong>
-              歴史、種類、そして日本人の想いをご覧ください。
+              <strong class="strong">ようこそ、日本列車の食事へ。</strong>
+              新鮮で高品質な和食を、列車の旅でお楽しみください。
             </h1>
 
             <div class="wrapper">
@@ -204,7 +206,7 @@
               </form>
 
               <p class="newsletter-text">
-                メールニュースレターを購読して、メンバー限定のコンテンツと更新情報にアクセスしましょう。
+                メールニュースレターを購読して、最新のメニュー情報と特別なオファーをゲットしましょう。
               </p>
             </div>
           </div>
@@ -217,8 +219,7 @@
         <section class="section featured" aria-label="featured post">
           <div class="container">
             <p class="section-subtitle">
-              まずは
-              <strong class="strong">おすすめの記事</strong> からご覧ください。
+              <strong class="strong">おすすめメニュー</strong> をご紹介
             </p>
 
             <ul class="has-scrollbar">
@@ -229,74 +230,24 @@
                     style="--width: 500; --height: 600"
                   >
                     <img
-                      src="./assets/images/featured-1.jpg"
+                      src="./assets/images/train2.webp"
                       width="500"
                       height="600"
                       loading="lazy"
-                      alt="新幹線の登場とその革新"
+                      alt="和風弁当"
                       class="img-cover"
                     />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-1.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-2.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
                   </figure>
 
                   <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">歴史</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">技術</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">レビュー</a>
-                      </li>
-                    </ul>
-
                     <h3 class="h4">
                       <a href="#" class="card-title hover:underline">
-                        新幹線の登場とその革新
+                        和風弁当 - 新鮮な食材を使用
                       </a>
                     </h3>
 
                     <p class="card-text">
-                      新幹線の誕生は、鉄道技術の進化の象徴です。その歴史を振り返り、その革新が日本社会に与えた影響を探ります。
+                      日本の旬の食材をふんだんに使った和風弁当。栄養満点で健康的な一食を列車でどうぞ。
                     </p>
                   </div>
                 </div>
@@ -309,53 +260,24 @@
                     style="--width: 500; --height: 600"
                   >
                     <img
-                      src="./assets/images/featured-2.jpg"
+                      src="./assets/images/train3.webp"
                       width="500"
                       height="600"
                       loading="lazy"
-                      alt="ローカル列車の魅力"
+                      alt="寿司セット"
                       class="img-cover"
                     />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
                   </figure>
 
                   <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">旅行</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">ライフスタイル</a>
-                      </li>
-                    </ul>
-
                     <h3 class="h4">
                       <a href="#" class="card-title hover:underline">
-                        ローカル列車の魅力
+                        寿司セット - 列車で味わう贅沢
                       </a>
                     </h3>
 
                     <p class="card-text">
-                      日本各地を結ぶローカル列車は、風光明媚な景色を楽しむ旅の一つです。その魅力と地元の文化に触れることの楽しさを紹介します。
+                      新鮮な魚介を使用した寿司セット。列車で贅沢なひとときをお楽しみください。
                     </p>
                   </div>
                 </div>
@@ -368,255 +290,24 @@
                     style="--width: 500; --height: 600"
                   >
                     <img
-                      src="./assets/images/featured-3.jpg"
+                      src="./assets/images/train4.webp"
                       width="500"
                       height="600"
                       loading="lazy"
-                      alt="未来の列車 - リニアモーターカーの可能性"
+                      alt="天ぷら盛り合わせ"
                       class="img-cover"
                     />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-4.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
                   </figure>
 
                   <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">技術</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">未来</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">レビュー</a>
-                      </li>
-                    </ul>
-
                     <h3 class="h4">
                       <a href="#" class="card-title hover:underline">
-                        未来の列車 - リニアモーターカーの可能性
+                        天ぷら盛り合わせ - サクサクの味わい
                       </a>
                     </h3>
 
                     <p class="card-text">
-                      リニアモーターカーは、次世代の高速鉄道として注目されています。その技術と未来の可能性について考察します。
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-4.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt="日本人にとっての鉄道の意味"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-2.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">文化</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">人々</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a href="#" class="card-title hover:underline">
-                        日本人にとっての鉄道の意味
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      日本の鉄道は単なる交通手段ではなく、文化の一部です。日本人にとって鉄道が持つ特別な意味を探ります。
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-5.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt="鉄道ファン必見！日本の列車の多様性"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-6.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">趣味</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">レビュー</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">デザイン</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a href="#" class="card-title hover:underline">
-                        鉄道ファン必見！日本の列車の多様性
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      日本には多種多様な列車が存在し、それぞれが独自の魅力を持っています。鉄道ファン必見の列車を紹介します。
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li class="scrollbar-item">
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 500; --height: 600"
-                  >
-                    <img
-                      src="./assets/images/featured-6.jpg"
-                      width="500"
-                      height="600"
-                      loading="lazy"
-                      alt="都会と地方を結ぶ鉄道網"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">インフラ</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">都市計画</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a href="#" class="card-title hover:underline">
-                        都会と地方を結ぶ鉄道網
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      日本の鉄道網は都会と地方を繋ぐ重要なインフラです。その役割と発展について見てみましょう。
+                      カラッと揚げた新鮮な野菜と海鮮の天ぷらを、列車で楽しむ特別な食体験。
                     </p>
                   </div>
                 </div>
@@ -633,7 +324,7 @@
           <div class="container">
             <div class="title-wrapper">
               <h2 class="h2 section-title">
-                最近の <strong class="strong">記事をチェック</strong>
+                最近の <strong class="strong">料理情報</strong> をチェック
               </h2>
 
               <div class="top-author">
@@ -645,71 +336,7 @@
                       style="--width: 100; --height: 100"
                     >
                       <img
-                        src="./assets/images/author-1.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-
-                  <li class="avatar-item">
-                    <a
-                      href="#"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-2.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-
-                  <li class="avatar-item">
-                    <a
-                      href="#"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-3.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-
-                  <li class="avatar-item">
-                    <a
-                      href="#"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-4.jpg"
-                        width="100"
-                        height="100"
-                        alt="top author"
-                        class="img-cover"
-                      />
-                    </a>
-                  </li>
-
-                  <li class="avatar-item">
-                    <a
-                      href="#"
-                      class="avatar large img-holder"
-                      style="--width: 100; --height: 100"
-                    >
-                      <img
-                        src="./assets/images/author-5.jpg"
+                        src="./assets/images/train5.webp"
                         width="100"
                         height="100"
                         alt="top author"
@@ -731,74 +358,24 @@
                     style="--width: 550; --height: 660"
                   >
                     <img
-                      src="./assets/images/recent-1.jpg"
+                      src="./assets/images/train6.webp"
                       width="550"
                       height="660"
                       loading="lazy"
-                      alt="山手線の進化とその未来"
+                      alt="おにぎりセット"
                       class="img-cover"
                     />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
                   </figure>
 
                   <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">都市交通</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">技術</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">レビュー</a>
-                      </li>
-                    </ul>
-
                     <h3 class="h4">
                       <a href="#" class="card-title hover:underline">
-                        山手線の進化とその未来
+                        おにぎりセット - 手軽で美味しい
                       </a>
                     </h3>
 
                     <p class="card-text">
-                      山手線は東京の都市交通の象徴的な存在です。その進化と今後の展望について解説します。
+                      定番の具材を使ったおにぎりセットは、列車での軽食にぴったりです。
                     </p>
                   </div>
                 </div>
@@ -811,677 +388,25 @@
                     style="--width: 550; --height: 660"
                   >
                     <img
-                      src="./assets/images/recent-2.jpg"
+                      src="./assets/images/train1.webp"
                       width="550"
                       height="660"
                       loading="lazy"
-                      alt="地下鉄の歴史とその発展"
+                      alt="うどんセット"
                       class="img-cover"
                     />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
                   </figure>
 
                   <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">歴史</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">都市計画</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">インフラ</a>
-                      </li>
-                    </ul>
-
                     <h3 class="h4">
                       <a href="#" class="card-title hover:underline">
-                        地下鉄の歴史とその発展
+                        うどんセット - ほっとする味わい
                       </a>
                     </h3>
 
                     <p class="card-text">
-                      日本の地下鉄は都市部の発展に大きく寄与しています。その歴史と現在の状況について掘り下げます。
+                      だしの香り豊かな温かいうどんは、旅の疲れを癒してくれます。
                     </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-3.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="日本の豪華列車 - 夢の旅"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-2.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-1.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">旅行</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">ライフスタイル</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">レビュー</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a href="#" class="card-title hover:underline">
-                        日本の豪華列車 - 夢の旅
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      日本の豪華列車は、ただの移動手段ではなく、贅沢な体験を提供します。夢のような旅を紹介します。
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-4.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="列車の時間管理 - 日本が世界に誇る正確さ"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">インフラ</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">技術</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a href="#" class="card-title hover:underline">
-                        列車の時間管理 - 日本が世界に誇る正確さ
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      日本の列車は時間に対する厳密な管理で知られています。その背景と技術を深掘りします。
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-5.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="日本の鉄道文化 - 世界への影響"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-1.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-6.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">文化</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">社会</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">ライフスタイル</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a href="#" class="card-title hover:underline">
-                        日本の鉄道文化 - 世界への影響
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      日本の鉄道文化は、世界中の鉄道システムに大きな影響を与えています。その影響力と文化的意義について考察します。
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 550; --height: 660"
-                  >
-                    <img
-                      src="./assets/images/recent-6.jpg"
-                      width="550"
-                      height="660"
-                      loading="lazy"
-                      alt="列車と季節 - 四季を感じる旅"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-6.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <ul class="card-meta-list">
-                      <li>
-                        <a href="#" class="card-tag">旅行</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">ライフスタイル</a>
-                      </li>
-
-                      <li>
-                        <a href="#" class="card-tag">自然</a>
-                      </li>
-                    </ul>
-
-                    <h3 class="h4">
-                      <a href="#" class="card-title hover:underline">
-                        列車と季節 - 四季を感じる旅
-                      </a>
-                    </h3>
-
-                    <p class="card-text">
-                      日本の列車は、四季折々の風景を楽しむ絶好の手段です。季節ごとに異なる列車の旅の魅力を紹介します。
-                    </p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-
-            <button class="btn">もっと見る</button>
-          </div>
-        </section>
-
-        <!-- 
-        - #RECOMMENDED POST
-      -->
-
-        <section class="section recommended" aria-label="recommended post">
-          <div class="container">
-            <p class="section-subtitle">
-              <strong class="strong">おすすめ</strong>の記事
-            </p>
-
-            <ul class="grid-list">
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-1.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="鉄道旅行の魅力 - のんびりとした時間を楽しむ"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-5.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-2.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a href="#" class="card-title hover:underline">
-                        鉄道旅行の魅力 - のんびりとした時間を楽しむ
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-2.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="列車で行く日本の秘境 - 自然と文化を楽しむ旅"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a href="#" class="card-title hover:underline">
-                        列車で行く日本の秘境 - 自然と文化を楽しむ旅
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-3.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="鉄道ファンが集う場所 - 鉄道博物館の魅力"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-1.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a href="#" class="card-title hover:underline">
-                        鉄道ファンが集う場所 - 鉄道博物館の魅力
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-4.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="ローカル線の魅力 - ゆったりとした時間を過ごす"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-4.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a href="#" class="card-title hover:underline">
-                        ローカル線の魅力 - ゆったりとした時間を過ごす
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-5.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="列車で巡る日本の季節"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-6.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a href="#" class="card-title hover:underline">
-                        列車で巡る日本の季節
-                      </a>
-                    </h3>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="blog-card">
-                  <figure
-                    class="card-banner img-holder"
-                    style="--width: 300; --height: 360"
-                  >
-                    <img
-                      src="./assets/images/recommended-6.jpg"
-                      width="300"
-                      height="360"
-                      loading="lazy"
-                      alt="日本の鉄道システムの未来"
-                      class="img-cover"
-                    />
-
-                    <ul class="avatar-list absolute">
-                      <li class="avatar-item">
-                        <a
-                          href="#"
-                          class="avatar img-holder"
-                          style="--width: 100; --height: 100"
-                        >
-                          <img
-                            src="./assets/images/author-3.jpg"
-                            width="100"
-                            height="100"
-                            loading="lazy"
-                            alt="Author"
-                            class="img-cover"
-                          />
-                        </a>
-                      </li>
-                    </ul>
-                  </figure>
-
-                  <div class="card-content">
-                    <h3 class="h5">
-                      <a href="#" class="card-title hover:underline">
-                        日本の鉄道システムの未来
-                      </a>
-                    </h3>
                   </div>
                 </div>
               </li>
@@ -1495,7 +420,7 @@
 
         <section class="section newsletter">
           <h2 class="h2 section-title">
-            <strong class="strong">新しい投稿</strong>を購読する
+            <strong class="strong">新しいメニュー</strong>を購読する
           </h2>
 
           <form action="" class="newsletter-form">
@@ -1521,17 +446,8 @@
       <div class="container">
         <div class="footer-top section">
           <div class="footer-brand">
-            <a href="#" class="logo">
-              <img
-                src="./assets/images/logo.svg"
-                width="129"
-                height="40"
-                alt="日本の列車ブログ ロゴ"
-              />
-            </a>
-
             <p class="footer-text">
-              日本の列車についての情報や記事を提供するブログです。文化、技術、旅行の視点から列車を探ります。
+              日本列車の旅に、新鮮で高品質な和食をお届けします。列車の旅をもっと特別なものにするために。
             </p>
           </div>
 
@@ -1649,11 +565,7 @@
         </div>
 
         <div class="section footer-bottom">
-          <p class="copyright">
-            &copy; 日本の列車ブログ 2024. 制作:
-            <a href="#" class="copyright-link hover:underline">codewithsadee</a
-            >.
-          </p>
+          <p class="copyright">&copy; 日本列車の食事 2024.</p>
         </div>
       </div>
     </footer>
@@ -1677,19 +589,19 @@
     <script>
       // Get the modal
       var modal = document.getElementById("shinkansen-modal");
-      
+
       // Get the <span> element that closes the modal
       var span = document.getElementsByClassName("close")[0];
-      
+
       // When the user clicks on <span> (x), close the modal
-      span.onclick = function() {
+      span.onclick = function () {
         modal.style.display = "none";
-      }
-      
+      };
+
       // When the user clicks anywhere inside the modal (including the modal content), close it
-      modal.onclick = function() {
+      modal.onclick = function () {
         modal.style.display = "none";
-      }
+      };
     </script>
   </body>
 </html>
