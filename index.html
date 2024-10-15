@@ -614,7 +614,6 @@
                       throw new Error("Secret key not found in the response");
                   }
       
-                  console.log(`Fetched secret key: ${secretKey}`);
                   const decodedText = decodeURIComponent(encodedText);  // Decode URI component if necessary
                   const bytes = CryptoJS.AES.decrypt(decodedText, secretKey); // Decrypt using the fetched secret key
                   return bytes.toString(CryptoJS.enc.Utf8); // Convert decrypted bytes to UTF-8 string
