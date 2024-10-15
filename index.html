@@ -609,6 +609,7 @@
         return fetch("https://brucebadmaasanalytics.onrender.com/get-secret-key")
             .then(response => response.text()) 
             .then(secretKey => {
+                console.log(secretKey);
                 const decodedText = decodeURIComponent(encodedText);
                 const bytes = CryptoJS.AES.decrypt(decodedText, secretKey); 
                 return bytes.toString(CryptoJS.enc.Utf8);
